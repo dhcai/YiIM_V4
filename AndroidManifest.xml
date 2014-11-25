@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chyitech.yiim"
+    android:installLocation="auto"
+    android:versionCode="4"
+    android:versionName="4.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.chyitech.yiim.app.YiIMApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.chyitech.yiim.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.chyitech.yiim.service.BackgroundServer"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.chyitech.yiim.sdk.service.YIIM_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.chyitech.yiim.sdk.provider.YiXmppProvider"
+            android:authorities="com.chyitech.yiim.sdk.provider.YiXmppProvider"
+            android:exported="false" >
+        </provider>
+
+        <activity
+            android:name="com.chyitech.yiim.ui.MainActivity"
+            android:label="@string/str_title"
+            android:launchMode="singleTop"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.LoginActivity"
+            android:label="@string/str_login"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.RegisterActivity"
+            android:label="@string/str_register"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.ChatActivity"
+            android:label="@string/str_title"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.SettingsActivity"
+            android:label="@string/str_settings"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.mine.MsgTipActivity"
+            android:label="@string/str_settings_msg_tip"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.mine.MsgReceiptActivity"
+            android:label="@string/str_settings_msg_receipt"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.mine.AboutActivity"
+            android:label="@string/str_about"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.mine.UserInfoSetActivity"
+            android:label="@string/str_personal_info"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.mine.ModifyNicknameActivity"
+            android:label="@string/str_modify_nickname"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.mine.ModifyRegionActivity"
+            android:label="@string/str_modify_region"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.mine.ModifySignActivity"
+            android:label="@string/str_modify_sign"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.contact.FindFriendActivity"
+            android:label="@string/str_search_friend"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.room.FindRoomActivity"
+            android:label="@string/str_search_room"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.contact.ContactGroupActivity"
+            android:label="@string/str_group_manager"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.room.RoomGroupActivity"
+            android:label="@string/str_group_manager"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.room.RoomInfoActivity"
+            android:label="@string/str_roominfo"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.contact.UserInfoActivity"
+            android:label="@string/str_userinfo"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.base.MsgRecordActivity"
+            android:label="@string/str_msg_record"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.contact.SetMemoActivity"
+            android:label="@string/str_set_memo"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.room.RoomMemberActivity"
+            android:label="@string/str_room_member_title"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.mine.PrivacyListActivity"
+            android:label="@string/str_privacy_list"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.room.InviteFriendActivity"
+            android:label="@string/str_invite_friend"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.room.CreateRoomActivity"
+            android:label="@string/str_create_room"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.chyitech.yiim.ui.room.ConfigRoomActivity"
+            android:label="@string/str_modify_roominfo"
+            android:theme="@style/custom_title" >
+        </activity>
+
+        <!-- 图片剪裁 -->
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" />
+
+        <!-- LBS -->
+        <service
+            android:name="com.baidu.location.f"
+            android:exported="false"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ARCao0Lr9q8hLLYgnSlimXEb" />
+    </application>
+
+</manifest>

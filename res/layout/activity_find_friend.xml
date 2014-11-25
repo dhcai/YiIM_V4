@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="5dip" >
+
+        <EditText
+            android:id="@+id/find_friend_edittext"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_edit_normal"
+            android:hint="@string/str_find_friend_hint" />
+
+        <Button
+            style="@style/common_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:onClick="onSearchClick"
+            android:text="@string/str_find" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white" >
+
+        <com.chyitech.yiim.common.SwipeListView
+            android:id="@+id/find_friend_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@drawable/contact_list_bg_selector" />
+
+        <include
+            android:id="@+id/common_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/common_loading"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

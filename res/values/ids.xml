@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="key_group" type="id"/>
+    <item name="key_child" type="id"/>
+    <item name="key_id1" type="id"/>
+    <item name="key_id2" type="id"/>
+    <item name="key_id3" type="id"/>
+    <item name="group_name" type="id"></item>
+    <item name="group_id" type="id"></item>
+
+</resources>

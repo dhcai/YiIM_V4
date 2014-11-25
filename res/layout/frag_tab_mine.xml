@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tab_mine_persional_info"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_personal_info"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_mine_privacy"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tab_mine_privacy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_privacy_list"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tab_mine_privacy"
+                android:layout_marginLeft="15dip"
+                android:text="@string/str_privacy_list_tip"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:background="@color/cell_header_bg" />
+
+        <RelativeLayout
+            android:id="@+id/tab_mine_settings"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_settings"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_mine_about"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_about"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_mine_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_exit"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:background="@color/cell_header_bg" />
+
+        <RelativeLayout
+            android:id="@+id/tab_mine_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_logout"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

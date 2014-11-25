@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.chyitech.yiim.common.SwipeExpandableListView
+            android:id="@+id/contacts_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/contact_list_bg_selector" />
+
+        <include
+            android:id="@+id/list_group_header"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            layout="@layout/list_group_item"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/common_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/common_loading" />
+    </FrameLayout>
+
+</LinearLayout>

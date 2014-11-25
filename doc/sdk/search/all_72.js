@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['realname',['realName',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_xmpp_v_card.html#a0747d976c57d75c713954e11aa72f5ce',1,'com::chyitech::yiim::sdk::api::YiXmppVCard']]],
+  ['registerinroom',['registerInRoom',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#ac657b88a6e2aee04250a8ff9e98a325e',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['registeruser',['registerUser',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a552d3dd4303dc770e22e12cc2a32fd2a',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['relogin',['reLogin',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a640be7c07435fefafdc4d8118c1d5aed',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['removeallconversation',['removeAllConversation',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a2a3ee06a0b3fe0e97a476f5a00d7a2e6',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['removeallmessage',['removeAllMessage',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a770c23136e3306444f6f8762c75a81ef',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['removeconversation',['removeConversation',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#abf4d179fc8018692a9e12164d20c0da9',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['removefriend',['removeFriend',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#af3a1164750240c795bea96f3983c32c9',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['removegroup',['removeGroup',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a98855670eb86b80945c866e056ee1cb2',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['removemessage',['removeMessage',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a0415e27cf70a53d35497ba9b93f42e9c',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['removeroom',['removeRoom',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a7f4effd8261b430ea8122b2177c87802',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['removeroomgroup',['removeRoomGroup',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a8e6b3a161235e9ca576c49c386197330',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['renamegroup',['renameGroup',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#aaea83f25c6ae44e77d6648bb8e5d4667',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['renameroomgroup',['renameRoomGroup',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a09a185f6d8d3ee65099c250e363f89ae',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['requestmessagereceipt',['requestMessageReceipt',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a48747cbfd404b5c0b99720ac512c9f21',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['requestnearby',['requestNearBy',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a0fda9b901b2612fd2fd83b6c4506c966',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['rerequestauthorization',['reRequestAuthorization',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a0cef95b6ddd89e27594039ecceb80d9f',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['resend',['resend',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a000412821e6194dcee8633a4db7e5685',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['resendmessage',['resendMessage',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#ad2ba3894fee75cac0fc2ce59dd84b5e4',1,'com::chyitech::yiim::sdk::api::YiIMSDK.resendMessage(final String msgId, String msg, String jid)'],['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#ab71bc22432db93fb38623bf6104a8bf4',1,'com::chyitech::yiim::sdk::api::YiIMSDK.resendMessage(final String msgId, String msg, String jid, long failDelay)']]],
+  ['responsemessagereceipt',['responseMessageReceipt',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a1bd819fd9cdb8920366eafd2b38086fe',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['roomautojoin',['roomAutoJoin',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#acd04dd19301efd4c84423703e55a44d1',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['roomjoinedbyjid',['roomJoinedByJid',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#aad1ddc7a42abb8d8071735d2ebb20706',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['roomjoinedbyname',['roomJoinedByName',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_i_m_s_d_k.html#a7ac7418c8e3b38d69b5bf3aa0c20957f',1,'com::chyitech::yiim::sdk::api::YiIMSDK']]],
+  ['roster',['roster',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_xmpp_room_info.html#a10c92e264fe9a93c8f3150f920ceb98b',1,'com::chyitech::yiim::sdk::api::YiXmppRoomInfo.roster()'],['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_xmpp_v_card.html#ad83fa76899eb72d22afa1d3737449b49',1,'com::chyitech::yiim::sdk::api::YiXmppVCard.roster()']]],
+  ['rostertype',['rosterType',['../classcom_1_1chyitech_1_1yiim_1_1sdk_1_1api_1_1_yi_xmpp_v_card.html#a42a7756fc7908ef5c132043ef52130d7',1,'com::chyitech::yiim::sdk::api::YiXmppVCard']]]
+];

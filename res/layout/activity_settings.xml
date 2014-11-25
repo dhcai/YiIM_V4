@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/settings_msg_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true"
+            android:onClick="onMsgTipClick" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_settings_msg_tip"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_msg_receipt"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true"
+            android:onClick="onMsgReceiptClick" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_settings_msg_receipt"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_settings_auto_join"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.chyitech.yiim.common.CheckSwitchButton
+                android:id="@+id/settings_room_autojoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="6dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:background="@color/cell_header_bg" />
+
+        <RelativeLayout
+            android:id="@+id/settings_clear_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true"
+            android:onClick="onClearChatRecord" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_settings_clear_msg"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_clear_conversation"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true"
+            android:onClick="onClearSessionRecord" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_settings_clear_conversation"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_clear_image"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true"
+            android:onClick="onClearImageCache" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_settings_clear_image"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_clear_userinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@drawable/contact_list_bg_selector"
+            android:clickable="true"
+            android:onClick="onClearAllUsersInfo" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:text="@string/str_settings_clear_userinfo"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:contentDescription="@null"
+                android:src="@drawable/group_fold_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

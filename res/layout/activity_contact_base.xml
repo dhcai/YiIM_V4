@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white" >
+
+        <com.chyitech.yiim.common.SwipeListView
+            android:id="@+id/contact_base_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@drawable/contact_list_bg_selector" />
+
+        <include
+            android:id="@+id/common_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/common_loading"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>
